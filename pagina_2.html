@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  
+* {
+  box-sizing: border-box;
+}
+
+html {height:100%;margin:0;padding:0}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+   height:100%;
+   margin:0;
+   padding:0;
+  
+  }
+
+h2 {
+	margin:0;
+	padding:0;
+	margin:auto;
+	width: 900px;
+	text-align:center;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+
+
+/* Style the header */
+header {
+	width:100%;
+  background-color: rgb(0, 0, 0);
+  font-size: 35px;
+  color: white;
+  height:30%;  
+  position:relative;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 20%;
+  background: rgb(15, 15, 15);
+  padding: 20px;
+  height:100%;
+  margin:0;padding:0;
+  text-align: center;
+  line-height: 80px;
+  
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  height:100%;
+  background-image:url(pexels-eberhard-grossgasteiger-691668.jpg);
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+section {
+  height:70%;
+  background-color: #0e0d0dbb;
+  margin:0;
+  padding:0;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+	
+  }
+}
+a{
+  color: rgb(33, 150,243);
+}
+</style>
+</head>
+<body>
+
+
+<header>
+  <h2>COME HO FATTO A CREARE QUESTO EFFETTO?</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="pagina_2.html">BOLLA</a></li>
+      <li><a href="pagina_3.html">ELLISE</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Bolla</h1>
+    <p>La pagina iniziale (homepage) si compone di un messaggio di benvenuto e di un effetto grafico (bolla) nella parte inferiore.<br>
+     <br>
+      Per la creazione della pagina per prima cosa ho creato dei contenitori nel corpo della pagina contenenti un'intestazione (h1) e un paragrafo.<br>
+      Nel tag body, all'apertura della pagina, viene richiamata la funzione di typeWriter che è stata utilizzata per la creazione dell'effetto macchina da scrivere.<br>
+      La funzione imposta un timer che ogni tot ms (500) aggiunge del testo all'elemento h1. Quando il testo di h1 è arrivato alla fine richiama l'altra funzione che aggiunge il testo al tag p (paragrafo);<br>
+      <br><br>
+      L'effetto bolla che si muove allo spostarsi del mouse è stato creato inserendo un div e richiamando un file javascript già programmato che si preoccupa di gestire gli eventi e di creare la forma geometrica allo spostarsi del mouse.<br>
+      Lo stile della bolla è definito nel file css (bolla.css).</p>
+  </article>
+</section>
+
+
+
+</body>
+</html>

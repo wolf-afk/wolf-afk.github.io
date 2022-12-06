@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>progetto scuola home page</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="bolla.css">
+    </head>
+    <body onload=" typeWriter()">
+        <a href="pagina_1.html">
+          <div id="bubble-wrapper">
+  
+          </div>
+          
+          
+          <script id="rendered-js" src="./js/bolla.js"></script>
+        <div id="divhome_noblur">
+            <span>
+                <h1 id="zjp_typewriter"></h1>
+        <p id="zjp_typewriter2"></p>
+        <script>
+            var i = 0;
+            var txt = 'Hi';
+            var speed = 500;
+            
+            function typeWriter() {
+              if (i < txt.length) {
+                document.getElementById("zjp_typewriter").innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+              }
+              else { 
+                typeWriter2();
+              }
+            }
+            var posizione = 0;
+            var testo = 'tap to continue';
+            var velocita = 100;
+            
+            function typeWriter2() {
+              if (posizione < testo.length) {
+                document.getElementById("zjp_typewriter2").innerHTML += testo.charAt(posizione);
+                posizione++;
+                setTimeout(typeWriter2, velocita);
+              }
+            }
+            </script>
+            
+        </span>
+    </div>
+        
+        </a>
+    </body>
+</html>
